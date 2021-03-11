@@ -25,8 +25,6 @@ function ConvertHandler() {
     if (isNaN(result)) {
       return "invalid number";
     }
-
-    return result;
   };
 
   this.getUnit = function (input) {
@@ -64,7 +62,7 @@ function ConvertHandler() {
     var result;
 
     if (initUnit === "gal" || initUnit === "GAL") {
-      result = "l";
+      result = "L";
     } else if (initUnit === "l" || initUnit === "L") {
       result = "gal";
     }
